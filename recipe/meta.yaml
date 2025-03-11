@@ -1,4 +1,5 @@
 {% set name = "arrakis-python" %}
+{% set pypi_name = "arrakis" %}
 {% set version = "0.2.0" %}
 
 {% set python_min = "3.10" %}
@@ -8,7 +9,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/arrakis-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/arrakis-{{ version }}.tar.gz
   sha256: ca2338f289975cde0785040f6ae69c940262fae1c86d42d0e14fa9521a4a66e9
 
 build:
@@ -38,7 +39,7 @@ test:
     - python {{ python_min }}
   commands:
     - python -m pip check
-    - python -m pip show {{ name }}
+    - python -m pip show {{ pypi_name }}
     - python -m pytest -ra -v --pyargs arrakis
 
 about:
