@@ -24,12 +24,14 @@ requirements:
     - hatchling
     - hatch-vcs
   run:
-    - python-confluent-kafka >=1.8
     - gpstime
+    - jsonschema
     - libarrow-flight
     - numpy
     - pyarrow
     - python >={{ python_min }}
+    - python-arrakis-schema >=0.1
+    - python-confluent-kafka >=1.8
     - typing_extensions
 
 test:
