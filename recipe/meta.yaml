@@ -37,8 +37,9 @@ requirements:
 test:
   requires:
     - pip
-    - pytest
     - python {{ python_min }}
+    - pytest
+    - pytest-console-scripts
   commands:
     - python -m pip check
     - python -m pip show {{ pypi_name }}
