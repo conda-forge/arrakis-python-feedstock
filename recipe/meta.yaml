@@ -32,6 +32,7 @@ requirements:
     - python >={{ python_min }}
     - python-arrakis-schema >=0.1
     - python-confluent-kafka >=1.8
+    - sympy
     - typing_extensions
 
 test:
@@ -40,6 +41,7 @@ test:
     - python {{ python_min }}
     - pytest
     - pytest-console-scripts
+    - pytest-freezer
   commands:
     - python -m pip check
     - python -m pip show {{ pypi_name }}
