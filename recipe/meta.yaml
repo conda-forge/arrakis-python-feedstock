@@ -30,7 +30,7 @@ requirements:
     - numpy
     - pyarrow
     - python >={{ python_min }}
-    - python-arrakis-schema =0.1.*
+    - python-arrakis-schema =0.2.*
     - python-confluent-kafka >=1.8
     - sympy
     - typing_extensions
