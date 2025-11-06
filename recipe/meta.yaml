@@ -42,6 +42,7 @@ test:
     - pytest
     - pytest-console-scripts
     - pytest-freezer
+    - mockafka-py
   commands:
     - python -m pip check
     - python -m pip show {{ pypi_name }}
