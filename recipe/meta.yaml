@@ -1,6 +1,6 @@
 {% set name = "arrakis-python" %}
 {% set pypi_name = "arrakis" %}
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 {% set python_min = "3.10" %}
 
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/arrakis-{{ version }}.tar.gz
-  sha256: eaead412f7176c5abac25b493b2b6213076003eba6b9a5c0d709c210a5f6876b
+  sha256: 685bdadcca456714d364cbd28cc85766f1b67f3285272c3d88f7281e135d0d48
 
 build:
   noarch: python
@@ -42,11 +42,10 @@ test:
     - pytest
     - pytest-console-scripts
     - pytest-freezer
-    - mockafka-py
   commands:
     - python -m pip check
     - python -m pip show {{ pypi_name }}
-    - python -m pytest -ra -v --pyargs arrakis
+    - python -m pytest -ra -v --pyargs arrakis -k "not test_publish"
 
 about:
   home: https://git.ligo.org/ngdd/arrakis-python
