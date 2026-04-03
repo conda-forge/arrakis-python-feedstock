@@ -1,6 +1,6 @@
 {% set name = "arrakis-python" %}
 {% set pypi_name = "arrakis" %}
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 
 {% set python_min = "3.10" %}
 
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/arrakis-{{ version }}.tar.gz
-  sha256: 685bdadcca456714d364cbd28cc85766f1b67f3285272c3d88f7281e135d0d48
+  sha256: 3ea9636c49a25643fcbf773ab033c896e160534bae3665c882ae4b0197f63769
 
 build:
   noarch: python
@@ -32,6 +32,7 @@ requirements:
     - python >={{ python_min }}
     - python-arrakis-schema =0.2.*
     - python-confluent-kafka >=1.8
+    - rich
     - sympy
     - typing_extensions
 
