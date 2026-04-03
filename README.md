@@ -25,11 +25,10 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=24282&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/arrakis-python-feedstock?branchName=main">
-      </a>
+      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
     </td>
   </tr>
 </table>
@@ -157,5 +156,5 @@ Feedstock Maintainers
 
 * [@duncanmmacleod](https://github.com/duncanmmacleod/)
 * [@jrollins](https://github.com/jrollins/)
-* [@myNameIsPatrick](https://github.com/myNameIsPatrick/)
+* [@nothisisolivia](https://github.com/nothisisolivia/)
 
