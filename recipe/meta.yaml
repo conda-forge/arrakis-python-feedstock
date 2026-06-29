@@ -24,13 +24,13 @@ requirements:
     - hatchling
     - hatch-vcs
   run:
-    - gpstime
+    - gpstime >=0.9
     - jsonschema
     - libarrow-flight
     - numpy
     - pyarrow
     - python >={{ python_min }}
-    - python-arrakis-schema =0.3.*
+    - python-arrakis-schema =0.4.*
     - python-confluent-kafka >=1.8
     - rich
     - sympy
