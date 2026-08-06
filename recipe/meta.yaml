@@ -43,6 +43,7 @@ test:
     - pytest
     - pytest-console-scripts
     - pytest-freezer
+    - pytest-timeout
   commands:
     - python -m pip check
     - python -m pip show {{ pypi_name }}
