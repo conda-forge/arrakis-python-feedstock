@@ -1,6 +1,6 @@
 {% set name = "arrakis-python" %}
 {% set pypi_name = "arrakis" %}
-{% set version = "0.16.0" %}
+{% set version = "0.17.0" %}
 
 {% set python_min = "3.10" %}
 
@@ -9,8 +9,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/arrakis-{{ version }}.tar.gz
-  sha256: b268dc01f61fdd687f8a2533650105ca55abd0e783c372df822efff2ad870740
+  url: https://files.pythonhosted.org/packages/source/{{ pypi_name[0] }}/{{ pypi_name }}/arrakis-{{ version }}.tar.gz
+  sha256: 2effce3a46bdf483564dd40996a319cf57d2fbd9017735628397b2b1d5b3c57d
 
 build:
   noarch: python
