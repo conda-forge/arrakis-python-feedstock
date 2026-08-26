@@ -25,6 +25,7 @@ requirements:
     - hatch-vcs
   run:
     - gpstime >=0.9
+    - igwn-auth-utils >=1.0
     - jsonschema
     - libarrow-flight
     - numpy
