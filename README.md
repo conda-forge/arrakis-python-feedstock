@@ -13,13 +13,12 @@ Development: https://git.ligo.org/ngdd/arrakis-python
 
 Documentation: https://docs.ligo.org/ngdd/arrakis-python
 
-
+## Features
 
 - Query live and historical timeseries data
 - Describe channel metadata
 - Search for channels matching a set of conditions
 - Publish timeseries data
-
 
 Current build status
 ====================
