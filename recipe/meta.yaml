@@ -2,8 +2,6 @@
 {% set pypi_name = "arrakis" %}
 {% set version = "0.18.1" %}
 
-{% set python_min = "3.10" %}
-
 package:
   name: {{ name|lower }}
   version: {{ version }}
