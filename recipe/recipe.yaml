@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.19.0"
+  version: "0.20.0"
 
 package:
   name: arrakis-python
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/a/arrakis/arrakis-${{ version }}.tar.gz
-  sha256: 05cc52cf8e730e52192e78687b4536228b05bcb5aec2a71239cf445ed2fbbe7d
+  sha256: 3234269de8a12d086de7962a08ea091934b7d0fa0c851e79be3b65b5bb55f33a
 
 build:
   noarch: python
